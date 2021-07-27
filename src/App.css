@@ -3,8 +3,8 @@ h1 {
 }
 
 #square {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   border: 2px solid black;
   font-size: 10rem;
   text-align: center;
@@ -12,7 +12,8 @@ h1 {
 
 #gameboard {
   display: flex;
-  width: 620px;
+  width: 720px;
   flex-wrap: wrap;
   margin: 0 auto;
+justify-content: center;
 }
