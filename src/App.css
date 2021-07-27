@@ -1,19 +1,30 @@
-h1, p{
+h1, p {
   text-align: center;
+  font-family: 'Grenze Gotisch', cursive;
+  margin-bottom: 4px;
+  font-size: 2.5rem;
 }
 
 #square {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border: 2px solid black;
-  font-size: 10rem;
+  font-size: 8rem;
   text-align: center;
 }
 
 #gameboard {
   display: flex;
-  width: 720px;
+  width: 500px;
   flex-wrap: wrap;
   margin: 0 auto;
 justify-content: center;
+}
+
+#win {
+  text-align: center;
+  font-size: 4rem;
+  text-shadow: 2px 2px grey;
+  font-family: 'Grenze Gotisch', cursive;
+  margin-top: 7px;
 }
