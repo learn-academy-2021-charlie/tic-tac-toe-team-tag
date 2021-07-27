@@ -14,7 +14,15 @@ class App extends Component{
     return(
       <>
         <h1>Tic Tac Toe</h1>
-        <Square />
+        <div id="gameboard">
+          {this.state.squares.map((value, index) => {
+        return (
+          <Square
+
+          />
+        )
+      })}
+    </div>
       </>
     )
   }
