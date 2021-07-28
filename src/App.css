@@ -3,12 +3,13 @@ h1, p {
   font-family: 'Grenze Gotisch', cursive;
   margin-bottom: 4px;
   font-size: 2.5rem;
+  color:floralwhite;
 }
 
 #square {
   height: 150px;
   width: 150px;
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
   font-size: 8rem;
   text-align: center;
 }
@@ -24,7 +25,19 @@ justify-content: center;
 #win {
   text-align: center;
   font-size: 4rem;
-  text-shadow: 2px 2px grey;
+  text-shadow: 2px 2px rgb(250, 7, 7);
   font-family: 'Grenze Gotisch', cursive;
   margin-top: 7px;
+}
+
+#resetButton {
+  margin-left: 10px;
+}
+
+#box {
+  background-image: url(./img/haven.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  
 }

@@ -33,7 +33,7 @@ class App extends Component{
   }
 
   handleGamePlay = (index) => {
-    const {squares, activePlayer} = this.state
+    const {squares, activePlayer,} = this.state
     if (activePlayer === "player1") {
       squares[index] = "😇"
       this.setState({squares: squares, activePlayer: "player2"})
@@ -46,11 +46,21 @@ class App extends Component{
     }
   }
 
+  resetGame = () => {
+    this.setState({
+      squares: ["", "", "", "", "", "", "", "", ""],
+      activePlayer: "player1",
+      winingPlayer: ""
+
+    })
+  }
 
   render(){
     return(
       <>
+      <div id="box">
         <h1>Tic Tac Toe</h1>
+    
         <div id="gameboard">
           {this.state.squares.map((value, index) => {
         return (
@@ -64,6 +74,8 @@ class App extends Component{
       })}
     </div>
     {this.state.winingPlayer && <p id="win">Player {this.state.winingPlayer} you are the winner!</p>}
+      <button id="resetButton" onClick={this.resetGame}>Reset Game</button>
+      </div>
       </>
     )
   }
